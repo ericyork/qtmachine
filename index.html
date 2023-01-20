@@ -4,13 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>qtmachine</title>
-    <link rel="stylesheet" href="css/modnorm.min.css">
+    <link rel="stylesheet" href="css/simple.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+  
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tags</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
     
-    
+    <main>
+      <article>
+        <figure>
+          <blockquote cite="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Quote text</blockquote>
+          <figcaption>
+            <span class="author">author name</span> 
+            from 
+            <cite>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Source Title</a>
+            </cite>.
+          </figcaption>
+          <span>Tagged with: <span class="tags">uncategorized</span></span>
+          <span>Added on: <span class="dates">01/01/1970</span></span>
+        </figure>
+      </article>
+    </main>
+    <footer>
+      <p>&copy;2023 Eric York</p>
+    </footer>
+
     <!-- loads page scripts -->
+    <script src="js/data.js"></script>
     <script src="js/page.js"></script>
   </body>
 </html>
