@@ -4,5 +4,5 @@
 3. create a repository and copy the [url]
 4. git remote add origin [url]
 5. git add .
-6. git commit -m "file import"
+6. git commit -m "creates repo"
 7. git push origin main
