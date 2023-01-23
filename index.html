@@ -3,46 +3,47 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>qtmachine</title>
+    <title>Quoter | Home</title>
     <link rel="stylesheet" href="css/simple.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-  
     <header>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Tags</a></li>
-          <li><a href="#">About</a></li>
+          <li>
+            <a href="">Sci-fi Quoter</a> 
+            <small>(<span id="count">0</span> quotes)</small>
+          </li>
+          <li>
+            <button onclick="addQuote()">&plus;</button>
+          </li>
+          <li class="select">
+            <select name="menu" id="tag-nav">
+              <option value="Any">Any</option>
+              <option value="Ethics">Ethics</option>
+              <option value="History">History</option>
+              <option value="Humor">Humor</option>
+              <option value="Philosophy">Philosophy</option>
+              <option value="Politics">Politics</option>
+              <option value="Science">Science</option>
+              <option value="Technology">Technology</option>
+            </select>
+            <span class="focus"></span>
+          </li>
         </ul>
       </nav>
     </header>
-    
-    <main>
-      <h1>Quote Machine <small>v0.1</small></h1>
-      
-      <article class="quote">
-        <figure>
-          <blockquote cite="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Quote by me of a longer quote that I forgot, and added back in anyway. It was something that had to happen eventually, but I wish I'd done it sooner. Boy, what a relief that it’s over with.</blockquote>
-          <figcaption>
-            <span class="author">Author Name</span> 
-            <cite>
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Source Title</a>
-            </cite>
-          </figcaption>
-        </figure>
-        <footer>
-          <span class="tags">uncategorized</span>
-          <span class="dates">01/01/1970</span>
-        </footer>
-      </article>
-      
+    <main id="main">
+    <!-- component goes here -->   
     </main>
+    <!-- <div class="controls">
+      <button onclick="addQuote()">+</button>
+      <button onclick="removeQuote()">&ndash;</button>
+    </div> -->
     <footer>
       <p>&copy;2023 Eric York</p>
     </footer>
-
     <!-- loads page scripts -->
     <script src="js/data.js"></script>
     <script src="js/page.js"></script>
