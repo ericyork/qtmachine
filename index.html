@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quoter | Home</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/simple.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -15,14 +15,10 @@
             <a href="">Sci-fi Quoter</a> 
             <small>(<span id="count">0</span> quotes)</small>
           </li>
-          <li>
-            <button onclick="addQuote()">&plus;</button>
-          </li>
           <li class="select">
-            <select name="menu" id="tag-nav">
-              <option value="Any">Any</option>
+            <select name="menu" id="select">
+              <option value="All">All</option>
               <option value="Ethics">Ethics</option>
-              <option value="History">History</option>
               <option value="Humor">Humor</option>
               <option value="Philosophy">Philosophy</option>
               <option value="Politics">Politics</option>
@@ -30,6 +26,9 @@
               <option value="Technology">Technology</option>
             </select>
             <span class="focus"></span>
+          </li>
+          <li>
+            <button onclick="displayQuote()">&plus;</button>
           </li>
         </ul>
       </nav>
@@ -46,6 +45,6 @@
     </footer>
     <!-- loads page scripts -->
     <script src="js/data.js"></script>
-    <script src="js/page.js"></script>
+    <script src="js/logic.js"></script>
   </body>
 </html>

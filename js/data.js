@@ -1,4 +1,4 @@
-const allQuotes = [
+const data = [
   {
     "text": "Violence is the last refuge of the incompetent.",
     "author": "Isaac Asimov",
@@ -37,7 +37,7 @@ const allQuotes = [
     "source": "The Gods Themselves",
     "path": "https://en.wikipedia.org/wiki/The_Gods_Themselves",
     "date": "1972",
-    "tag": "History"
+    "tag": "Politics"
   },
   {
     "text": "Ideas are cheap. It’s only what you do with them that counts.",
