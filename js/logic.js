@@ -19,7 +19,7 @@ function getQuote() {
 const quoteFactory = (obj) => {
   const makeQuote = 
     `<article class="quote">
-      <button class="close" onClick="this.parentElement.remove();">&minus;</button>
+      <button class="close" onClick="this.parentElement.remove();">&times;</button>
       <figure>
         <blockquote cite="${obj.path}">${obj.text}</blockquote>
         <figcaption>
